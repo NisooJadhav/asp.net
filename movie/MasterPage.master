@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td colspan="2">
+    
+        <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Italic="True" 
+            Font-Size="XX-Large" ForeColor="#006600" Text="Theatre Seat Booking"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                <br />
+                <br />
+                <asp:LinkButton ID="LinkButton1" runat="server">Search</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton2" runat="server">Edit Profile</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton3" runat="server">Change Password</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton4" runat="server">Log Out</asp:LinkButton>
+            </td>
+            <td>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
